@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bp" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddOdersController">
+   <center>
+      <AnchorPane prefHeight="542.0" prefWidth="600.0">
+         <children>
+            <Pane prefHeight="115.0" prefWidth="600.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="115.0" prefWidth="600.0" text="Add Orders">
+                     <font>
+                        <Font name="Forte" size="68.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutY="115.0" prefHeight="258.0" prefWidth="600.0">
+               <children>
+                  <Label layoutX="65.0" layoutY="16.0" text="Order ID:" />
+                  <Label layoutX="65.0" layoutY="54.0" text="Date:" />
+                  <Label layoutX="57.0" layoutY="90.0" text="Product List:" />
+                  <Label layoutX="65.0" layoutY="131.0" text="Quantity:" />
+                  <Label layoutX="65.0" layoutY="178.0" text="Unit Price:" />
+                  <Label layoutX="65.0" layoutY="221.0" text="Total Price:" />
+                  <TextField fx:id="idTextField" editable="false" layoutX="182.0" layoutY="10.0" />
+                  <TextField fx:id="quantityTestField" layoutX="182.0" layoutY="127.0" onKeyPressed="#quantityOnKyPressed" onKeyReleased="#quantityOnKeyReleased" onKeyTyped="#quantityOnKyPressed" />
+                  <TextField fx:id="UPriceText" layoutX="182.0" layoutY="174.0" />
+                  <TextField fx:id="totalPriceText" layoutX="183.0" layoutY="217.0" />
+                  <ChoiceBox fx:id="choiceBox" layoutX="182.0" layoutY="84.0" prefWidth="150.0" />
+                  <DatePicker fx:id="datePicker" layoutX="182.0" layoutY="48.0" prefHeight="25.0" prefWidth="150.0" />
+               </children>
+            </Pane>
+            <Pane layoutY="370.0" prefHeight="173.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="addButton" layoutX="35.0" layoutY="74.0" mnemonicParsing="false" onAction="#addAction" prefHeight="42.0" prefWidth="136.0" text="Add" />
+                  <Button fx:id="cleanButton" layoutX="189.0" layoutY="74.0" mnemonicParsing="false" onAction="#cleanAction" prefHeight="42.0" prefWidth="142.0" text="Clean" />
+                  <Button fx:id="closeButton" layoutX="338.0" layoutY="74.0" mnemonicParsing="false" onAction="#closeAction" prefHeight="42.0" prefWidth="147.0" text="Close" />
+               </children>
+            </Pane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="bp" prefHeight="694.0" prefWidth="1202.0" style="-fx-background-color: #6e9987;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HelloController">
+   <center>
+      <AnchorPane fx:id="ap" prefHeight="635.0" prefWidth="535.0">
+         <children>
+            <Text fx:id="messageText" fill="WHITE" layoutX="344.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Laboratory 4">
+               <font>
+                  <Font name="Arial" size="40.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="694.0" prefWidth="289.0" spacing="20.0" style="-fx-background-color: #0D1824;" BorderPane.alignment="CENTER">
+          <padding>
+              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+          </padding>
+          <Button onAction="#home" prefHeight="58.0" prefWidth="323.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Home" textFill="WHITE">
+            <font>
+               <Font name="Arial" size="30.0" />
+            </font>
+         </Button>
+         <Button layoutX="30.0" layoutY="68.0" onAction="#customerOnAction" prefHeight="58.0" prefWidth="266.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Customers" textFill="WHITE">
+            <font>
+               <Font name="Arial" size="30.0" />
+            </font>
+         </Button>
+         <Button layoutX="30.0" layoutY="113.0" onAction="#productOnAction" prefHeight="58.0" prefWidth="262.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Products" textFill="WHITE">
+            <font>
+               <Font name="Arial" size="30.0" />
+            </font>
+         </Button>
+         <Button layoutX="30.0" layoutY="159.0" onAction="#ordersOnAction" prefHeight="58.0" prefWidth="263.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Orders" textFill="WHITE">
+            <font>
+               <Font name="Arial" size="30.0" />
+            </font>
+         </Button>
+         <Button onAction="#salesOnAction" prefHeight="58.0" prefWidth="263.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Sales" textFill="WHITE">
+            <font>
+               <Font name="Arial" size="30.0" />
+            </font>
+         </Button>
+         <Button onAction="#exit" prefHeight="58.0" prefWidth="263.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Exit" textFill="WHITE">
+            <font>
+               <Font name="Arial" size="30.0" />
+            </font>
+         </Button>
+      </VBox>
+   </left>
+</BorderPane>
